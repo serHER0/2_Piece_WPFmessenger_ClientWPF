@@ -1,0 +1,23 @@
+﻿<Window x:Class="ClientWPF.accWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClientWPF"
+        mc:Ignorable="d"
+        Title="accWindow" Height="336" Width="377" Loaded="accWindow_load">
+    <Grid>
+        <ListBox x:Name="friendList" d:ItemsSource="{d:SampleData ItemCount=5}" FontSize="17" Margin="0,44,0,0" HorizontalAlignment="Left" Width="179" Height="160" VerticalAlignment="Top"/>
+        <Label x:Name="friendsLabel" Content="Friends" HorizontalAlignment="Left" FontSize="17" Margin="0,13,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="chatFriend" Content="Chat" HorizontalAlignment="Left" Margin="10,209,0,0" VerticalAlignment="Top" Height="39" Width="72" Click="chatFriend_Click"/>
+        <Button x:Name="friendsButt" Content="viewFriends" HorizontalAlignment="Left" FontSize="15" Margin="265,43,0,0" VerticalAlignment="Top" Height="37" Width="95" Click="friendsButt_Click"/>
+        <Button x:Name="reqButt" Content="viewReq" HorizontalAlignment="Left" Margin="265,85,0,0" FontSize="15" VerticalAlignment="Top" Height="37" Width="95" Click="reqButt_Click"/>
+        <Button x:Name="addFriendButt" Content="addFriend" HorizontalAlignment="Left" Margin="265,209,0,0" VerticalAlignment="Top" Height="37" Width="95" Click="addFriendButt_Click" RenderTransformOrigin="0.313,-0.378"/>
+        <Label x:Name="acclabel" Content="accaunt:" HorizontalAlignment="Left" Margin="222,3,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="searchBox" HorizontalAlignment="Left" Margin="10,266,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="searchButt" Content="search" HorizontalAlignment="Left" Margin="158,264,0,0" VerticalAlignment="Top" Height="29" Width="56" Click="searchButt_Click"/>
+        <Button x:Name="exitButt" Content="exit" HorizontalAlignment="Left" Margin="296,264,0,0" VerticalAlignment="Top" Height="29" Width="64" Click="exitButt_Click"/>
+        <Button x:Name="updateButt" Content="update" HorizontalAlignment="Left" Margin="265,127,0,0" VerticalAlignment="Top" Height="33" Width="95" Click="updateButt_Click"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,22 @@
+﻿<Window x:Class="ClientWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClientWPF"
+        mc:Ignorable="d"
+        Title="ClientDiscD" Height="238" Width="305">
+    <Grid Height="223" VerticalAlignment="Center" HorizontalAlignment="Center" Width="305" Loaded="MainWindow_load">
+        <TextBox x:Name="loginBox" Margin="80,0,0,158" TextWrapping="Wrap" HorizontalAlignment="Left" Width="160" Height="20" VerticalAlignment="Bottom"/>
+        <Label x:Name="loginLabel" Content="login" Margin="24,47,0,0" HorizontalAlignment="Left" Width="36" Height="30" VerticalAlignment="Top" RenderTransformOrigin="0.535,1.761"/>
+        <TextBox x:Name="passBox" Margin="80,82,0,0" TextWrapping="Wrap" HorizontalAlignment="Left" Width="160" Height="20" VerticalAlignment="Top"/>
+        <Label x:Name="passLabel" Content="pass" Margin="0,0,245,125" HorizontalAlignment="Right" Width="32" Height="26" VerticalAlignment="Bottom"/>
+        <Button x:Name="registButt" Content="Registration" HorizontalAlignment="Right" Margin="0,151,210,0" Width="71" Click="registButt_Click" Height="35" VerticalAlignment="Top"/>
+        <Button x:Name="logButt" Content="Login" Margin="198,151,0,0" Click="logButt_Click" HorizontalAlignment="Left" Width="71" Height="35" VerticalAlignment="Top"/>
+        <TextBox x:Name="ipBox" Margin="28,0,0,183" TextWrapping="Wrap" Text="26.87.241.72:900" HorizontalAlignment="Left" Width="168" Height="17" VerticalAlignment="Bottom"/>
+        <Label x:Name="statusLabel" Content="Status:" Margin="0,116,47,0" IsEnabled="False" Height="30" VerticalAlignment="Top" HorizontalAlignment="Right" Width="230"/>
+        <Label x:Name="disconnLabel" Content="" HorizontalAlignment="Left" Margin="10,191,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+        <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="398,55,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
